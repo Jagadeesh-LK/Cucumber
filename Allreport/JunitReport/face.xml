@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="419.461283">
+<testcase classname="To validate forgot password of facebook using chrome browser" name="_2" time="116.892888">
+<system-out><![CDATA[Given user have to validate forgot password of facebook using chrome browser.passed
+When user have to click forgot password button..............................passed
+And user have to enter email or phone number in search box..................passed
+Then user have to click search button.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate facebook login using chrome browser" name="To validate facebook login by invalid userid and invalid password" time="76.000546">
+<system-out><![CDATA[Given user have to validate facebook login using chrome browser.............passed
+When user have to enter the Invalid userid and Invalid password.............passed
+And user have to click login button.........................................passed
+Then user have to verify wheather is in invalid credential page.............passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate facebook login using chrome browser" name="To validate facebook login by invalid userid and valid password" time="94.112017">
+<system-out><![CDATA[Given user have to validate facebook login using chrome browser.............passed
+When user have to enter the Invalid userid and Valid pasword................passed
+And user have to click login button.........................................passed
+Then user have to verify wheather is in invalid credential page.............passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login for amazon using chrome browser" name="To validate login for amazon using valid phone number and invalid password" time="64.442218">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.baseclass.BaseClass.moveElement(BaseClass.java:227)&#13;&#10;&#9;at org.step1.Step1.user_have_to_enter_valid_phone_number_and_invalid_password(Step1.java:122)&#13;&#10;&#9;at ✽.user have to enter valid phone number and invalid password(file:logina.feature:10)&#13;&#10;"><![CDATA[Given user have to validate login for amazon using chrome browser...........passed
+When user have to enter valid phone number and invalid password.............failed
+And user have to click submit continue  button..............................skipped
+Then user have to verify wheather password incorrect is displayed...........skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.baseclass.BaseClass.moveElement(BaseClass.java:227)
+	at org.step1.Step1.user_have_to_enter_valid_phone_number_and_invalid_password(Step1.java:122)
+	at ✽.user have to enter valid phone number and invalid password(file:logina.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="To validate login for amazon using chrome browser" name="To validate login for amazon using invalid phone number" time="68.013614">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.baseclass.BaseClass.moveElement(BaseClass.java:227)&#13;&#10;&#9;at org.step1.Step1.user_have_to_enter_invalid_phone_number(Step1.java:173)&#13;&#10;&#9;at ✽.user have to enter invalid phone number(file:logina.feature:18)&#13;&#10;"><![CDATA[Given user have to validate login for amazon using chrome browser...........passed
+When user have to enter invalid phone number................................failed
+And user have to click continue button......................................skipped
+Then user have to verify wheather phone number incorrect is displayed.......skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.baseclass.BaseClass.moveElement(BaseClass.java:227)
+	at org.step1.Step1.user_have_to_enter_invalid_phone_number(Step1.java:173)
+	at ✽.user have to enter invalid phone number(file:logina.feature:18)
+]]></failure>
+</testcase>
+</testsuite>
