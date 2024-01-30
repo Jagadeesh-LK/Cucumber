@@ -1,2 +1,8 @@
 HELLO WORLD
 This is the change by tester two
+
+int a = new int[]{2,243,345};
+
+for(int n:a){
+	System.out.println(n);
+}
